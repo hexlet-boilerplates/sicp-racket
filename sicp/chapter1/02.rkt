@@ -1,6 +1,6 @@
-#lang racket/base
+#lang sicp
 
-(require rackunit)
+(#%require rackunit)
 
 (define solution
   (/ (+ 5
@@ -9,7 +9,9 @@
            (- 3
               (+ 6
                  (/ 4
-                    5)))))
+                    (dec
+                     (inc
+                      5)))))))
      (* 3
         (- 6
            2)
