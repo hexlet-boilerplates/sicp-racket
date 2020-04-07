@@ -11,10 +11,10 @@
 
 ### Using
 
-1. Copy content of this repo (not clone!) to your repository
-2. Write code (look `sicp/chapter1/02.rkt`)
-3. Run tests `make test`
-4. Run linter `make lint`
+1.  Copy content of this repo (not clone!) to your repository
+2.  Write code (look `sicp/chapter1/02.rkt`)
+3.  Run tests `make test`
+4.  Run linter `make lint`
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/hexletguides.github.io/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=sicp-racket)
 
