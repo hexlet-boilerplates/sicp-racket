@@ -1,12 +1,13 @@
 # Sicp Racket Boilerplate
 
-[![github action status](https://github.com/hexlet-components/sicp-racket/workflows/Racket%20CI/badge.svg)](https://github.com/hexlet-components/sicp-racket/actions)
+[![github action status](https://github.com/hexlet-boilerplates/sicp-racket/workflows/Racket%20CI/badge.svg)](https://github.com/hexlet-boilerplates/sicp-racket/actions)
 
 ### Requirements
 
 * Racket
 * Rackunit (`raco pkg install rackunit`)
 * [SICP Support for DrRacket](https://docs.racket-lang.org/sicp-manual/index.html) (`raco pkg install sicp`)
+* [Racket-review](https://github.com/Bogdanp/racket-review) surface-level linter (`raco pkg install review`)
 * Make
 
 ### Using
