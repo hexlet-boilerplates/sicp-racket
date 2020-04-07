@@ -1,0 +1,19 @@
+name: Racket CI
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Racket environment
+        uses: Bogdanp/setup-racket@v0.6
+      - name: Install packages
+        run: make install
+      - name: Run linter
+        run: make lint
+      - name: Run tests
+        run: make test
