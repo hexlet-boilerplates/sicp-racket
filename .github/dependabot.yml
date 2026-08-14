@@ -1,0 +1,12 @@
+version: 2
+multi-ecosystem-groups:
+  all-dependencies:
+    schedule:
+      interval: weekly
+updates:
+  # Только экшены: racket dependabot не поддерживает
+  - package-ecosystem: github-actions
+    directory: /
+    patterns:
+      - "*"
+    multi-ecosystem-group: all-dependencies
