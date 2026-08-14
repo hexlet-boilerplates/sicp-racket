@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Setup Racket environment
-        uses: Bogdanp/setup-racket@v1.14
+        uses: Bogdanp/setup-racket@v1.15
       - name: Install packages
         run: make install
       - name: Run linter
