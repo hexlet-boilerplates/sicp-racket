@@ -4,18 +4,18 @@
 
 ## Requirements
 
-- Racket
-- Rackunit (`raco pkg install rackunit`)
-- [SICP Support for DrRacket](https://docs.racket-lang.org/sicp-manual/index.html) (`raco pkg install sicp`)
-- [Racket-review](https://github.com/Bogdanp/racket-review) surface-level linter (`raco pkg install review`)
+- [mise](https://mise.jdx.dev): ставит Racket и остальные инструменты из `mise.toml` (`mise install`)
 - Make
+
+Пакеты Racket (rackunit, [SICP Support for DrRacket](https://docs.racket-lang.org/sicp-manual/index.html), surface-level линтер [Racket-review](https://github.com/Bogdanp/racket-review)) ставит `make install`.
 
 ### Using
 
 1. Copy content of this repo (not clone!) to your repository
-2. Write code (look `sicp/chapter1/02.rkt`)
-3. Run tests `make test`
-4. Run linter `make lint`
+2. Install packages `make install`
+3. Write code (look `sicp/chapter1/02.rkt`)
+4. Run tests `make test`
+5. Run linter `make lint`
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io?utm_source=github&utm_medium=link&utm_campaign=sicp-racket)
 

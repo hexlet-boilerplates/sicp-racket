@@ -1,0 +1,3 @@
+# Инструменты проекта. Версии latest, точные версии лежат в mise.lock.
+[tools]
+racket = "latest"

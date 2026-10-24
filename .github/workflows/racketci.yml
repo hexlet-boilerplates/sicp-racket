@@ -1,16 +1,29 @@
 name: Racket CI
 
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v7
-      - name: Setup Racket environment
-        uses: Bogdanp/setup-racket@v1.15
+        with:
+          persist-credentials: false
+      # Ставит Racket из mise.toml
+      # https://github.com/jdx/mise-action
+      - uses: jdx/mise-action@v5
       - name: Install packages
         run: make install
       - name: Run linter
