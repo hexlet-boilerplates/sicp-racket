@@ -1,5 +1,6 @@
 install:
 	raco pkg install --auto --skip-installed --no-docs rackunit sicp review
+	mise exec -- hk install --mise
 
 test:
 	raco test sicp

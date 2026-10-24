@@ -7,7 +7,7 @@
 - [mise](https://mise.jdx.dev): ставит Racket и остальные инструменты из `mise.toml` (`mise install`)
 - Make
 
-Пакеты Racket (rackunit, [SICP Support for DrRacket](https://docs.racket-lang.org/sicp-manual/index.html), surface-level линтер [Racket-review](https://github.com/Bogdanp/racket-review)) ставит `make install`.
+Пакеты Racket (rackunit, [SICP Support for DrRacket](https://docs.racket-lang.org/sicp-manual/index.html), surface-level линтер [Racket-review](https://github.com/Bogdanp/racket-review)) ставит `make install`, он же ставит git-хуки через hk.
 
 ### Using
 
